@@ -19,3 +19,6 @@ It would also be interesting to try to incorporate a feature which describes a t
 
 #### Historical Data
 I have not yet incorporated historical tournament data into my model. This is not going to be a simple addition, but it definitely would be interesting to see if adding this could increase my accuracy.
+
+#### Regression vs. Classification
+As mentioned above, I am currently using Gradient Boosted Decision Trees for my classifier. It can be noted that these can also work very well in regression problems. I think it would be interesting to try to approach this as a regression problem, as the score difference could give more information than simply a binary classification of win/loss.

@@ -144,10 +144,9 @@ def plotter(accuracy, variable):
 # Tunes hyperparameters within the Gradient Boost Classifier
 def tuneHyperParameters(X_train, y_train):
 	# Find optimal learning Rate
-	max_features = list(range(1,37, 5))
+	max_features = list(36)
 	accuracy_scores = []
 	for i in max_features:
-		print("Testing:", i)
 		# Now, run k-fold cross validation on the training vectors
 		params = {"max_depth": 4, "max_features": i}
 		clf = GradientBoostingClassifier(**params)
@@ -164,7 +163,12 @@ def main():
 	# Format our training dataset
 	X_train, y_train = formatTrainingData(data)
 	# Tune our hyperparameters
-	tuneHyperParameters(X_train, y_train)
+	#tuneHyperParameters(X_train, y_train)
+
+	params = {"max_depth": 4, "max_features": 26}
+	clf = GradientBoostingClassifier(**params)
+	accuracy = crossValidate(clf, X_train, y_train, 5)
+	print("Accuracy: " + str(100 * accuracy))
 
 
 if __name__ == "__main__":

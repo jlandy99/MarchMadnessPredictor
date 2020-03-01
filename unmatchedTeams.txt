@@ -1,496 +1,496 @@
-Texas Lutheran
-Col. of Charleston
-State Katherine
-VCU
-Champion Chris.
-Ferrum
-Merchant Marine
-Wayland Baptist
-ETSU
-Midway
-Central Oklahoma
-Valley Forge
-Bryan
-Centenary (LA)
-Southwestern (KS)
-Skidmore
-JWU (Denver)
-Northland
-Oglethorpe
-Central Arkansas Empire Classic (Riverside)
-Ohio-Chillicothe
-Blue Mountain (MS)
-CSU Bakersfield
-Vanguard
-San Diego Christian
-William Woods
-Bridgewater (VA)
-Campbellsville
-Washington Col.
-Brewton-Parker
-Buena Vista
-Chaminade
-Gettysburg
-Wisconsin Lutheran
-Texas Wesleyan
-UNC Asheville
-SUNY Potsdam
-Westminster (PA)
-Fisk
-State Thomas (TX)
-Southern University Cayman Islands (Mainland)
-Washington Adventist
-Hartwick
-Western New Mexico
-North Central (MN)
-Westmont
-Dominican (IL)
-Colorado Col.
-William Jessup
-Bacone
-Northwest Nazarene
-Centenary (NJ)
-Averett
-Purdue Northwest
-State Elizabeth
-Cal State Dom. Hills
-SFA
-Tuskegee
-Concordia (TX)
-Delaware State Maui Invitational (Mainland)
-Davis & Elkins
-BYU
-Voorhees
-Southern Utah Maui Invitational (Mainland)
-Virgin Islands
-IIT
-Nazareth
-Missouri Baptist
-Alaska Anchorage
-Apprentice
-Cal State LA
-Warren Wilson
-Angelo State
-Methodist
-Rutgers-Camden
-ETSU Maui Invitational (Mainland)
-Rockford
-East Texas Baptist
-Covenant
-UC-Clermont
-Keiser
-Fort Valley State
-Piedmont
-Lindenwood (IL)
-Queens (NY)
-TCU
-SIUE
-Fresno Pacific
-California
-McMurry
-Dixie State
-UC-Merced
-Calvary
-Brescia
-Martin Methodist
-Siena Heights
-Simpson (CA)
-NYIT
-UIC
-New Rochelle
-North Carolina Wesleyan
-Menlo
-Lindenwood (MO)
-Wisconsin-Stout
-Long Beach State
-Huntingdon
-Rivier
-State Joseph's (Brkln)
-Mt. Marty
-Christendom
-The Citadel
-Albion
-Lesley
-Omaha Cayman Islands (Mainland)
-Millsaps
-Florida Tech
-Maryville (TN)
-Aquinas
-Purchase
-Kentucky Christian
+Truett-McConnell
+Trevecca Nazarene
 Hiwassee
-Missouri-State Louis
-SUNY Canton
-Thomas (ME)
-Fontbonne
-Crowley's Ridge
-Geneva
-Thiel
-Indiana-Northwest
-Saint Leo
-LIU
-Arlington Baptist
-West Coast Baptist
-LaGrange
-UNC Greensboro
+Wilson
+Widener
 Tougaloo
-Central Washington
+Penn State-York
+Lyon
+State Louis Pharmacy
+Missouri Baptist
+Hampden-Sydney
+SUNY Maritime
+Rivier
+Mid-Atlantic Christian
+Concord
+BYU
+Midway
+Camp. Harrodsburg
+VCU
+Shawnee State
+Fontbonne
+Fort Valley State
+Northwest Nazarene
+Southern University Cayman Islands (Mainland)
+Franciscan
+Champion Chris.
+Southwestern (TX)
 UCF
-Wiley
-Mobile
-Whittier
-Stanislaus State
-Newberry
-State Thomas (FL)
-Mt. State Joseph
-UIW
-Cal Lutheran
-CMSV
-Lincoln (PA)
-Fayetteville State
-Lees-McRae
-Wilmington (DE)
-Misericordia
-Bemidji State
-State John's (NY) Big East Tournamnet
-Allen
-SAGU American Indian
-Shorter
-Harris-Stowe
-Mt. State Mary's
-Delta State
-SMU
-Quincy
-Eastern New Mexico
-Lenoir-Rhyne
-Avila
+Fisk
+Curry
+LSU
+Covenant
+Heidelberg
+Goucher
+Rutgers-Camden
+Georgia State Empire Classic (Riverside)
+Hiram
 Jarvis Christian
 A&M-Corpus Chris
-Louisiana Col.
-Mont. State-Northern
-Rosemont
-Mississippi Col.
-UMass Boston
-Welch
-UConn
-Elmira
-Davenport
-Ecclesia
-Eastern Mennonite
-Mayville State
-Bethesda (CA)
-Lamar University
-Oklahoma Christian
-Southern University
-Luther
-SUNY Oneonta
-North Greenville
-UTEP
-Westcliff
-Hood
-Pine Manor
-Saint Francis (PA) NIT
-Redlands
-Pacific (OR)
-SUNY Maritime
-Humboldt State
-Gallaudet
-Trinity Christian
-S'western Assemblies
-UMKC
-Gannon
-Dickinson State
-LIU Brooklyn
-Johnson (FL)
-Kentucky Wesleyan
-Oakland City
-Schreiner
-Trinity Baptist
-LSU
-Trinity (TX)
-Heidelberg
-Manchester
-Clarks Summit
-Concordia (NE)
-Tiffin
-Western New Eng.
-San Fran. State
-Farmingdale State
-UMBC
-Spalding
-Loyola Maryland Cayman Islands (Mainland)
-Le Moyne
-Indiana-South Bend
-Texas A&M International
-Mount Aloysius
-Southwest (NM)
-Bloomsburg
-Olivet Nazarene
-Medgar Evers
-Gordon
-Fairmont State
-Stockton
-SUNY Poly
-Southern Wesleyan
-Southwestern Christian
-Kean
-Southeastern Baptist
-Lewis & Clark
-Eastern Ore.
-Benedictine Mesa
-State Francis (IL)
-Georgian Court
-Curry
-Wisconsin-Parkside
-USC Upstate
-UVa-Wise
-UNLV
-Portland Bible
-Widener
-Wabash
-Holy Names
-Purdue Fort Wayne
-Trevecca Nazarene
-NC State
-FDU-Florham
-Alice Lloyd
-Edward Waters
-Chestnut Hill
-State Louis Pharmacy
-State Francis Brooklyn
-Greensboro
-Howard Payne
-UNCG
-Montana Tech
-Peru State
-Franciscan
-Spring Hill
-New Mexico Highlands
-East Central
-Bryn Athyn
-Williams Baptist
-Westminster (UT)
-Notre Dame de Namur
-Hendrix
-Pacific Union
-Regent
-Cal State San Marcos
-Missouri S&T
-Mid-Atlantic Christian
-Sewanee
-East-West University
-Rust
-Columbia International
-Maryville (MO)
-William Peace
-Wesley
-Ave Maria
-UMES
-c("American", "Ball State")
-Lyon
-Findlay
-Army West Point
-Winston-Salem
-Milligan
-Dallas Christian
-Flagler
-Me.-Machias
-UC-Irvine Don Haskins Sun Bowl Invitational
-Emerson
-Multnomah
-Camp. Harrodsburg
-La Verne
-Cent. Christian Bib.
-Midland
-Thomas (GA)
-Miles
 FGCU
-Penn State-York
-Pacific Lutheran
-Corban
-Shenandoah
-Concord
-Tampa
-Central State (OH)
-North Carolina A&T Don Haskins Sun Bowl Invitational
-Sonoma State
-Pfeiffer
-Truett-McConnell
-Bethany (KS)
-Xavier (LA)
-AUM
-State Edward's
-Rocky Mountain
-Salve Regina
-Rochester College
-New York Tech
-Colorado Christian
-Evergreen State
-Albany (NY) America East Championship
-Birmingham-Southern
-Cal State San B'dino
-Puget Sound
-Concordia Wisconsin
-Mid-Amer. Christian
-JWU (Charlotte)
-UC-Santa Cruz
-Caltech
-Northwest (WA)
-Montana Western
-Bowling Green
-Cairn
-Piedmont International
-DeSales
-Frostburg State
-Chicago
-Fort Wayne
-Rhodes
-Loyola Maryland
-Elizabethtown
-Goucher
-Neb. Wesleyan
-Goshen
-Pensacola Christian
-Wilson
-Truman
-Webber International
-Benedictine (IL)
-Randall
-Elms
-Bethel (TN)
-Judson (IL)
-William Carey
-Morehouse
-Urbana
-Saint Francis (PA) Northeast Conference Championship
-UNI
-Glenville State
-Connecticut Col.
-Haskell
-Walla Walla
-Malone
-West Alabama
-Indiana-Kokomo
-Central Penn
-Southeastern (FL)
-Me.-Fort Kent
-Hiram
-Michigan-Dearborn
-Presentation
-Northern New Mexico
-Texas A&M-Commerce
-Caldwell
-Western Colorado
-FIU
-LMU (CA)
-Concordia (MI)
-Texas-Dallas
-Southeastern Oklahoma
-Doane
-Paul Quinn
-UNCW
-Tennessee Wesleyan
-Cedarville
-Hawaii Pacific
-Ohio Northern
-Southwest Baptist
-LeTourneau
-Cornell College
-JWU (Providence)
-CSUN
-NVU-Lyndon
-Toccoa Falls
-LIFE Pacific
-Huston-Tillotson
-Clarion
-Bob Jones
-UTEP Don Haskins Sun Bowl Invitational
-Antelope Valley
-Freed-Hardeman
-UMass Lowell
-Ozarks (AR)
-MIT
-Southwest Minn. State
-Dubuque
-Coe
-Pikeville
-Bellevue
-Governors State
-Penn St-Wilkes Barre
-Loyola Chicago
-Penn
-Illinois Springfield
-Anderson (IN)
-Florida National
-Carver
-Texas Permian Basin
-Carson-Newman
-Edinboro
-Loyola (LA)
-Our Lady of the Lake
-Alcorn
-UAB
-Kansas City
-Carnegie Mellon
-UTRGV
-Hampden-Sydney
-Mars Hill
-Belmont Abbey
-Rogers State
-State Mary's (MD)
-Southern-N.O.
-Coker
-Eureka
-Brevard
-Middle Georgia State
-SUNY Cortland
-Florida Col.
-Cumberland (TN)
-Northwestern Ohio
-Earlham
-Oberlin
-Simpson
-Boyce
-Maine Maritime
-McNeese
-York (NE)
-Newbury
-California Baptist Empire Classic (Riverside)
-Bluefield State
-Holy Fam. Col. (WI)
-Wilmington (OH)
-Concordia Chicago
-McKendree
-UTSA
 Illinois Wesleyan
-A&M-Corpus Christi
-State Mary's (TX)
-Alma
-Marymount (VA)
-Emory & Henry
-Southwestern (TX)
-Palm Beach Atlanta
-Harding
-Shawnee State
-Wilberforce
+LIU Brooklyn
+Western Colorado
+Rio Grande
+FDU-Florham
+Simpson (CA)
+Winston-Salem
+SUNY Poly
+Ohio Northern
+Northern New Mexico
+UTRGV
+Chestnut Hill
+Concordia (NE)
+Apprentice
+Army West Point
+McNeese
+State Francis (IL)
+Allen
+Virgin Islands
+UMass Boston
+Morehouse
+Brevard
+Thiel
+State Elizabeth
+Southeastern Baptist
+Alice Lloyd
+Cornell College
+Aquinas
+State Francis Brooklyn
+Presentation
+Central Penn
+Saint Francis (PA) Northeast Conference Championship
+Ozarks (AR)
+Elms
+Willamette
+Me.-Machias
+Williams Baptist
+San Fran. State
+Bloomsburg
+UNC Asheville
+Bemidji State
+Southwestern Christian
+Piedmont International
+Benedictine Mesa
+LaGrange
+Pacific (OR)
+State John's (NY) Big East Tournamnet
+Multnomah
+Clarks Summit
+Benedictine (IL)
+Saint Leo
+Merchant Marine
+Lenoir-Rhyne
+Purchase
+SAGU American Indian
+Michigan-Dearborn
+McMurry
+Cairn
+Our Lady of the Lake
+Wayland Baptist
 Crown (MN)
 Reinhardt
-North Park
-State Andrews
-JWU (North Miami)
-Neb.-Kearney
-Willamette
+Pine Manor
+Siena Heights
+Concordia (TX)
 Molloy
+Hawaii Pacific
+Dubuque
+Campbellsville
+Delaware State Maui Invitational (Mainland)
+San Diego Christian
+Mars Hill
+Johnson (FL)
+Lincoln (PA)
+Newberry
+ETSU
+State Thomas (FL)
+Gettysburg
+Huntingdon
+Medgar Evers
+Notre Dame de Namur
+Haskell
+Montana Tech
+Fayetteville State
+Eastern Mennonite
+North Central (MN)
+NYIT
+Gannon
+Lees-McRae
+Findlay
+IIT
+Cal State LA
+Alaska Anchorage
+Western New Eng.
+Texas-Dallas
+Voorhees
+Peru State
+Wisconsin-Stout
+UMass Lowell
+Cal State Dom. Hills
+Brescia
+Urbana
+Bryn Athyn
+c("American", "Ball State")
+Loyola (LA)
 Montevallo
-CCNY
-Florida Memorial
-Minn.-Morris
+Doane
+SIUE
+Southwest Minn. State
+Western New Mexico
+Montana Western
+Wabash
+Calvary
+Southwestern (KS)
+Centenary (LA)
+Kean
+NVU-Lyndon
+William Peace
+Texas A&M-Commerce
+JWU (North Miami)
+Le Moyne
+UAB
+UC-Irvine Don Haskins Sun Bowl Invitational
+UTSA
+Bob Jones
+Oberlin
+Northwestern Ohio
+UTEP
+Walla Walla
+Pfeiffer
+LIFE Pacific
+Westminster (PA)
+State Mary's (MD)
+Blue Mountain (MS)
+Indiana-Northwest
+Geneva
+Evergreen State
+Florida Col.
+East Texas Baptist
+Luther
+New Rochelle
+Greensboro
+Trinity Christian
+Carson-Newman
+Southwest (NM)
+Rogers State
+West Coast Baptist
+Palm Beach Atlanta
+SUNY Cortland
+State Mary's (TX)
+Ferrum
+State Edward's
+North Carolina A&T Don Haskins Sun Bowl Invitational
+Southern Utah Maui Invitational (Mainland)
+Caldwell
+McKendree
+Menlo
+Hood
+Purdue Fort Wayne
+Regent
+Piedmont
+Ave Maria
+Concordia Chicago
+UNLV
+Mt. State Joseph
+The Citadel
+Dickinson State
+Harris-Stowe
+Arlington Baptist
+Martin Methodist
+Wilmington (DE)
+Alma
+Delta State
+Manchester
+Fresno Pacific
+Midland
+UNCW
+Neb.-Kearney
+Caltech
+Central Oklahoma
+Portland Bible
+Shenandoah
+Chicago
+Miles
+Concordia Wisconsin
+Cedarville
+Wiley
+Hartwick
+Toccoa Falls
+Indiana-Kokomo
+Christendom
+Brewton-Parker
+Mount Aloysius
+Bowling Green
+Fairmont State
+Huston-Tillotson
+Simpson
+Rosemont
+State Thomas (TX)
+Tuskegee
+Mississippi Col.
+Oakland City
+Edinboro
+Pensacola Christian
+ETSU Maui Invitational (Mainland)
+Omaha Cayman Islands (Mainland)
+UIW
+Marymount (VA)
+Cal State San Marcos
+Emory & Henry
+Rust
+Trinity Baptist
+Texas A&M International
+Carnegie Mellon
+State Joseph's (Brkln)
+Washington Col.
+Schreiner
+Indiana-South Bend
+MIT
+North Greenville
+Vanguard
+Wilmington (OH)
+Cal Lutheran
+Gallaudet
+Gordon
+State Andrews
+Eastern Ore.
+JWU (Providence)
+Loyola Maryland Cayman Islands (Mainland)
+Lindenwood (MO)
+Thomas (GA)
+Spalding
+UTEP Don Haskins Sun Bowl Invitational
+Boyce
+William Carey
+Lamar University
+Central Washington
+Glenville State
+Edward Waters
+Cal State San B'dino
+Tiffin
+S'western Assemblies
+Judson (IL)
+Colorado Christian
 Randolph
-Arkansas-Monticello
-Defiance
+Stanislaus State
+Clarion
+Southern-N.O.
+SUNY Potsdam
+Minn.-Morris
+UNCG
 Hardin-Simmons
-Erskine
-Georgia State Empire Classic (Riverside)
-Arkansas Tech
+Albany (NY) America East Championship
+Florida Memorial
+Texas Wesleyan
+Pacific Lutheran
+Salve Regina
+Kentucky Christian
+Emerson
+Mayville State
 Ottawa (AZ)
-Rio Grande
+Eastern New Mexico
+Loyola Chicago
+Milligan
+Averett
+Rochester College
+Northwest (WA)
+Millsaps
+UC-Merced
+Hendrix
+Dixie State
+Ecclesia
+Elizabethtown
+Holy Names
+Southern University
+Paul Quinn
+Mont. State-Northern
+Shorter
+William Woods
+Coe
+UNC Greensboro
+Penn St-Wilkes Barre
+Governors State
+Illinois Springfield
+Skidmore
+Anderson (IN)
+Arkansas-Monticello
+Bryan
+DeSales
+Queens (NY)
+Antelope Valley
+Rockford
+Trinity (TX)
+Texas Permian Basin
+Westmont
+Truman
+Alcorn
+TCU
+Birmingham-Southern
+Dallas Christian
+Mt. State Mary's
+California
+UIC
+Westcliff
+Sonoma State
+Ohio-Chillicothe
+Holy Fam. Col. (WI)
+Bethany (KS)
+Saint Francis (PA) NIT
+Wisconsin Lutheran
+Arkansas Tech
+UC-Clermont
+Mid-Amer. Christian
+Mt. Marty
+Davis & Elkins
+Flagler
+Neb. Wesleyan
+Florida National
+Louisiana Col.
+Wilberforce
+JWU (Charlotte)
+Southeastern (FL)
+UNI
+Columbia International
+Maine Maritime
+Wisconsin-Parkside
+Westminster (UT)
+East-West University
+AUM
+Oglethorpe
+A&M-Corpus Christi
+Texas Lutheran
+Olivet Nazarene
+USC Upstate
+Tampa
+Maryville (MO)
+York (NE)
+Albion
+CSUN
+LeTourneau
+Bacone
+Bellevue
+Eureka
+Florida Tech
+Erskine
+Purdue Northwest
+Maryville (TN)
+Georgian Court
+Colorado Col.
+FIU
+Bethel (TN)
+SUNY Oneonta
+Fort Wayne
+Long Beach State
+LIU
+Loyola Maryland
+New York Tech
+Carver
+Newbury
+Misericordia
+Elmira
+North Park
+UMES
+UMKC
+Coker
+Pacific Union
+SFA
+Whittier
+Valley Forge
+Frostburg State
+Bluefield State
+Webber International
+Concordia (MI)
+Kentucky Wesleyan
+CMSV
+Mobile
+Penn
+Avila
+Goshen
+Randall
+Quincy
+Belmont Abbey
+Tennessee Wesleyan
+Puget Sound
+Xavier (LA)
+Col. of Charleston
+Angelo State
+Chaminade
+Davenport
+Lesley
+Kansas City
+Crowley's Ridge
+Rocky Mountain
+Middle Georgia State
+Corban
+JWU (Denver)
+William Jessup
+Malone
+UC-Santa Cruz
+Lindenwood (IL)
+Farmingdale State
+Centenary (NJ)
+Connecticut Col.
+Thomas (ME)
+California Baptist Empire Classic (Riverside)
+Wesley
+West Alabama
+State Katherine
+Central State (OH)
+Bridgewater (VA)
+Defiance
+NC State
+East Central
+Nazareth
+Welch
+Warren Wilson
+Northland
+Buena Vista
+Missouri-State Louis
+Washington Adventist
+Me.-Fort Kent
+Lewis & Clark
+Spring Hill
+SUNY Canton
+Southwest Baptist
+Bethesda (CA)
+UMBC
+Sewanee
+Rhodes
+Central Arkansas Empire Classic (Riverside)
+Missouri S&T
+Freed-Hardeman
+UConn
+Humboldt State
+North Carolina Wesleyan
+SMU
+Southern Wesleyan
+Redlands
+Howard Payne
+Dominican (IL)
+CSU Bakersfield
+LMU (CA)
+Earlham
+Stockton
+Pikeville
+Cent. Christian Bib.
+Methodist
+Keiser
+Oklahoma Christian
+New Mexico Highlands
+Cumberland (TN)
+UVa-Wise
+La Verne
+Harding
+Southeastern Oklahoma
+CCNY

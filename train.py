@@ -5,6 +5,9 @@ from sklearn.model_selection import StratifiedKFold, GridSearchCV
 from sklearn import metrics, feature_selection
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.decomposition import TruncatedSVD
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+from matplotlib.legend_handler import HandlerLine2D
 
 
 # Builds team vectors out of csv file
@@ -37,7 +40,12 @@ def trimData(str):
 	str = str.replace("UT ", "UT-").replace("Wash.", "Washington")
 	str = str.replace("Ole Miss", "Mississippi").replace("La.", "Louisiana")
 	str = str.replace("UT-Martin", "Tennessee-Martin").replace("Seattle U", "Seattle")
-	str = str.replace("UT-Arlington", "Texas-Arlington")
+	str = str.replace("UT-Arlington", "Texas-Arlington").replace("Ind.", "Indiana")
+	str = str.replace("East.", "Eastern").replace("Wis.", "Wisconsin")
+	str = str.replace("Tex.", "Texas").replace("Atl.", "Atlanta")
+	str = str.replace("Int'l", "International").replace("Christ.", "Christian")
+	str = str.replace("Alas.", "Alaska").replace("N.M.", "New Mexico")
+	str = str.replace("Okla.", "Oklahoma").replace("Bapt.", "Baptist")
 	return str
 
 
@@ -101,7 +109,6 @@ def formatTrainingData(data):
 def crossValidate(clf, X, y, k):
 	# Keep track of the performance of the model on each fold in the scores array
 	scores = []
-	count = 0
 	# Create the object to split the data
 	skf = StratifiedKFold(n_splits=k)
 	# Iterate through the training and testing data from each of the k-fold splits
@@ -120,10 +127,35 @@ def crossValidate(clf, X, y, k):
 		# Our function for the prediction will vary depending on the metric
 		accuracy = metrics.accuracy_score(y_test, clf.predict(X_test))
 		scores.append(accuracy)
-		print("Completed round", str(count + 1), "of", str(k) + ", ACCURACY = " + str(accuracy * 100))
-		count += 1
 	# Return the average performance across all fold splits.
 	return np.array(scores).mean()
+
+
+# Helper to plot results
+def plotter(accuracy, variable):
+	plt.plot(variable, accuracy)
+	plt.xlabel("max_features")
+	plt.ylabel("Accuracy")
+	plt.title("max_features.png")
+	plt.savefig("max_features.png")
+	plt.close()
+
+
+# Tunes hyperparameters within the Gradient Boost Classifier
+def tuneHyperParameters(X_train, y_train):
+	# Find optimal learning Rate
+	max_features = list(range(1,37, 5))
+	accuracy_scores = []
+	for i in max_features:
+		print("Testing:", i)
+		# Now, run k-fold cross validation on the training vectors
+		params = {"max_depth": 4, "max_features": i}
+		clf = GradientBoostingClassifier(**params)
+		accuracy = crossValidate(clf, X_train, y_train, 5)
+		print("Max Features: " + str(i) + ", Accuracy: " + str(100 * accuracy))
+		accuracy_scores.append(accuracy)
+	# Plot data
+	plotter(accuracy_scores, max_features)
 
 
 def main():
@@ -131,12 +163,8 @@ def main():
 	data = buildTeamVectors()
 	# Format our training dataset
 	X_train, y_train = formatTrainingData(data)
-	# Now, run k-fold cross validation on the training vectors
-	params = {"n_estimators": 100}
-	clf = GradientBoostingClassifier(**params)
-	accuracy = crossValidate(clf, X_train, y_train, 5)
-	print("Accuracy on cross validation: " + str(100 * accuracy))
-	print(clf.feature_importances_)
+	# Tune our hyperparameters
+	tuneHyperParameters(X_train, y_train)
 
 
 if __name__ == "__main__":

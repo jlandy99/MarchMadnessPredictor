@@ -1,18 +1,15 @@
 import numpy as np
 import pandas as pd
-from sklearn.svm import SVC, LinearSVC
-from sklearn.model_selection import StratifiedKFold, GridSearchCV
-from sklearn import metrics, feature_selection
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.decomposition import TruncatedSVD
+from sklearn.model_selection import StratifiedKFold
+from sklearn import metrics, feature_selection, preprocessing
+from sklearn.ensemble import GradientBoostingRegressor
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.legend_handler import HandlerLine2D
 
 
 # Builds team vectors out of csv file
-def buildTeamVectors():
-	seasons = [2015, 2016, 2017, 2018, 2019]
+def buildTeamVectors(seasons=[2015, 2016, 2017, 2018, 2019]):
 	dict = {}
 	sizes = set()
 	# Read in our compacted dataset for the current season
@@ -46,18 +43,32 @@ def trimData(str):
 	str = str.replace("Int'l", "International").replace("Christ.", "Christian")
 	str = str.replace("Alas.", "Alaska").replace("N.M.", "New Mexico")
 	str = str.replace("Okla.", "Oklahoma").replace("Bapt.", "Baptist")
+	str = str.replace("Bowling Green", "Bowling Green State")
+	str = str.replace("LSU", "Louisiana State").replace("USC", "Southern California")
+	str = str.replace("BYU", "Brigham Young").replace("Saint Mary's", "Saint Mary's (CA)")
 	return str
 
 
 # Format our whole X_train and y_train from our dictionary of team vectors
-def formatTrainingData(data):
-	X_train = np.zeros((41453, 65))
-	y_train = np.zeros((41453))
+def formatTrainingData(data, seasons=[2015, 2016, 2017, 2018, 2019]):
+	# Find out size of X_train, Y_train
+	size = 0
+	for year in seasons:
+		df = pd.read_csv("Data/" + str(year) + "-" + str(year + 1) + "/training.csv")
+		for index, row in df.iterrows():
+			team1 = trimData(row[1])
+			team2 = trimData(row[2])
+			vec1 = data.get(team1 + str(year), None)
+			vec2 = data.get(team2 + str(year), None)
+			if vec1 is not None and vec2 is not None:
+				size += 1
+	# Set size
+	X_train = np.zeros((size, 65))
+	y_train = np.zeros((size))
 	unmatched = set()
 	count = 0
 	count1 = count2 = 0
 	# Iterate through our training.csv file to build to our X_train and Y_train
-	seasons = [2015, 2016, 2017, 2018, 2019]
 	for year in seasons:
 		df = pd.read_csv("Data/" + str(year) + "-" + str(year + 1) + "/training.csv")
 		# Iterate by row and formulate training vector
@@ -99,34 +110,42 @@ def formatTrainingData(data):
 		for team in unmatched:
 			f.write(team)
 			f.write("\n")
-	# Keep track of lost teams
-	print("found:", float(count1)/float(count1 + count2))
 	# Return our training data
 	return X_train, y_train
 
 
 # Runs k-fold cross validation on the training data for the year to build a model
-def crossValidate(clf, X, y, k):
+def crossValidate(clf, X, y, k, percent=50):
 	# Keep track of the performance of the model on each fold in the scores array
 	scores = []
 	# Create the object to split the data
 	skf = StratifiedKFold(n_splits=k)
+	count = 1
 	# Iterate through the training and testing data from each of the k-fold splits
 	for train_index, test_index in skf.split(X, y):
 		# Get our training and testing data to use from the split function
 		X_train, X_test = X[train_index], X[test_index]
 		y_train, y_test = y[train_index], y[test_index]
 		# Remove columns with low correlation to label outcome
-		selector = feature_selection.SelectPercentile(feature_selection.mutual_info_classif, percentile=59).fit(X_train, y_train)
+		selector = feature_selection.SelectPercentile(feature_selection.mutual_info_classif, percentile=percent).fit(X_train, y_train)
 		X_train = selector.transform(X_train)
 		# Note the columns we remove must be extracted from X_test as well here
 		X_test = selector.transform(X_test)
-		# Fit based on the training data
+		# Normalize data
+		X_train = preprocessing.normalize(X_train)
+		X_test = preprocessing.normalize(X_test)
+		# Fit based on the training normalized data
 		clf.fit(X_train, y_train)
 		# Update the scores array with the performance on the testing data
+		y_pred = clf.predict(X_test)
+		# Move all values to binary classifications
+		y_pred[y_pred >= 0.5] = 1
+		y_pred[y_pred < 0.5] = 0
 		# Our function for the prediction will vary depending on the metric
-		accuracy = metrics.accuracy_score(y_test, clf.predict(X_test))
+		accuracy = metrics.accuracy_score(y_test, y_pred)
+		print(accuracy)
 		scores.append(accuracy)
+		count += 1
 	# Return the average performance across all fold splits.
 	return np.array(scores).mean()
 
@@ -134,27 +153,27 @@ def crossValidate(clf, X, y, k):
 # Helper to plot results
 def plotter(accuracy, variable):
 	plt.plot(variable, accuracy)
-	plt.xlabel("max_features")
+	plt.xlabel("percentile feature selection")
 	plt.ylabel("Accuracy")
-	plt.title("max_features.png")
-	plt.savefig("max_features.png")
+	plt.title("percentile.png")
+	plt.savefig("percentile.png")
 	plt.close()
 
 
 # Tunes hyperparameters within the Gradient Boost Classifier
 def tuneHyperParameters(X_train, y_train):
 	# Find optimal learning Rate
-	max_features = list(36)
+	percentiles = [50]
 	accuracy_scores = []
-	for i in max_features:
+	for i in percentiles:
 		# Now, run k-fold cross validation on the training vectors
-		params = {"max_depth": 4, "max_features": i}
-		clf = GradientBoostingClassifier(**params)
-		accuracy = crossValidate(clf, X_train, y_train, 5)
-		print("Max Features: " + str(i) + ", Accuracy: " + str(100 * accuracy))
+		params = {"max_depth": 4, "max_features": 26}
+		clf = GradientBoostingRegressor(**params)
+		accuracy = crossValidate(clf, X_train, y_train, 5, percent=i)
+		print("Percentile: " + str(i) + ", Accuracy: " + str(100 * accuracy))
 		accuracy_scores.append(accuracy)
 	# Plot data
-	plotter(accuracy_scores, max_features)
+	plotter(accuracy_scores, percentiles)
 
 
 def main():
@@ -163,12 +182,7 @@ def main():
 	# Format our training dataset
 	X_train, y_train = formatTrainingData(data)
 	# Tune our hyperparameters
-	#tuneHyperParameters(X_train, y_train)
-
-	params = {"max_depth": 4, "max_features": 26}
-	clf = GradientBoostingClassifier(**params)
-	accuracy = crossValidate(clf, X_train, y_train, 5)
-	print("Accuracy: " + str(100 * accuracy))
+	tuneHyperParameters(X_train, y_train)
 
 
 if __name__ == "__main__":

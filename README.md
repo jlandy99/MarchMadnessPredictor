@@ -9,6 +9,12 @@ The first challenge in this project was obtaining sufficient data. There are ton
 
 I built my training data from the past 5 years of NCAA games. Since I obtained my matchup data and team data from different sources, the team names were inconsistent, and many of them didn't match up, but after changing some common abbreviations, I had over 30,000 training points, and figured that would be sufficient. I then began looking at different models to use. I started with a simple Linear SVC, which performed pretty poorly, at around 57.5% accuracy on k-fold cross validation. I then incorporated a feature selection method from sklearn called mutual_info_classif, which essentially measures dependency between random variables to perform feature selection. I used this because I was using a ton of statistics that I was able to find online, and I wanted to simplify my model. I messed around with a few other classifiers, but the one that seemed to work the best was Gradient Boosted Decision Trees, similar to AdaBoost. Tweaking the parameters, I managed to get my accuracy on k-fold cross validation up to about 77.5%. Some of the plots for my hyperparameter tuning can be found in the Plots folder.
 
+I then prepared my model to work on tournament data. I did this by allowing a tournament bracket from year x to be tested using all regular season and tournament data from every year except x. While it could be argued that it's advantageous to use March Madness data only, I chose to use all regular season data because I valued the magnitudes higher quantity over the slightly better precision.
+
+For test.py, I incorporated a few new features into my model. First, I changed from GradientBoostingClassifier to GradientBoostingRegressor. This allows me to predict some real number instead of just 0 or 1. For my training data, I mapped any value >= 0.5 to 1 and any other value to 0. However, in testing tournament matchups, I preferred to run them many times and take the average. Using a regression model as opposed to classification allows me to incorporate an idea of strength of win/loss as opposed to just win/loss, which should help predictions.
+
+I also noticed that upon predicting my first tournaments, the predictions were largely scratch. I wanted to add in more chance to my model, due to the high nature of upsets in this type of tournament. I chose to implement a couple of strategies to achieve this. First, I varied hyperparameters around their optimal values when building my model per matchup. Thus, the average of several iterations of a single matchup would be composed of regressors with different tuning.
+
 ## Improvements
 There are a bunch of things that I would still like to add to this project before March Madness comes around and I have to finalize my model. 
 
@@ -19,6 +25,3 @@ It would also be interesting to try to incorporate a feature which describes a t
 
 #### Historical Data
 I have not yet incorporated historical tournament data into my model. This is not going to be a simple addition, but it definitely would be interesting to see if adding this could increase my accuracy.
-
-#### Regression vs. Classification
-As mentioned above, I am currently using Gradient Boosted Decision Trees for my classifier. It can be noted that these can also work very well in regression problems. I think it would be interesting to try to approach this as a regression problem, as the score difference could give more information than simply a binary classification of win/loss.

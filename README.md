@@ -15,6 +15,8 @@ For test.py, I incorporated a few new features into my model. First, I changed f
 
 I also noticed that upon predicting my first tournaments, the predictions were largely scratch. I wanted to add in more chance to my model, due to the high nature of upsets in this type of tournament. I chose to implement a couple of strategies to achieve this. First, I varied hyperparameters around their optimal values when building my model per matchup. Thus, the average of several iterations of a single matchup would be composed of regressors with different tuning.
 
+The last thing I did was functionalized formatting brackets correctly. This was largely unnecessary but it is nice to be able to see a bracket without having to write anything down.
+
 ## Improvements
 There are a bunch of things that I would still like to add to this project before March Madness comes around and I have to finalize my model. 
 

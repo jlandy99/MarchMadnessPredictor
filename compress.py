@@ -51,6 +51,10 @@ def main():
 	seasons = [2015, 2016, 2017, 2018, 2019]
 	# Compress downloaded data and compile training data
 	for year in seasons:
+		# Remove compact files before starting
+		if os.path.exists("Data/" + str(year) + "-" + str(year + 1) + "/teamData/compact.csv"):
+			os.remove("Data/" + str(year) + "-" + str(year + 1) + "/teamData/compact.csv")
+		# Compact our data
 		compactData(year)
 		#downloadTrainingData("Data/" + str(year) + "-" + str(year + 1) + "/", year)
 
